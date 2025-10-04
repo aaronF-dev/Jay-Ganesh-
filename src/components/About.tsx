@@ -31,7 +31,7 @@ const About = () => {
                   <div className="text-xs sm:text-sm text-muted-foreground">{t('hero.stats.experience')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-accent">2000+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-accent">1000+</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">{t('about.alumni')}</div>
                 </div>
               </div>

@@ -13,60 +13,152 @@ const Testimonials = () => {
 
   const staffMembers = [
     {
-      name: "Dr. Meera Patel",
-      role: "staff.principal",
-      qualification: "Ph.D. in Education",
-      experience: "25+ years",
-      specialization: "Educational Leadership",
-      image: "https://ik.imagekit.io/u1orvlllk/NISHIKANT%20PARADKAR.jpg?updatedAt=1759169347174",
+      name: "Mrs. Tejal Tukaram Vengurlekar",
+      role: "Headmistress",
+      qualification: "B.Com., B.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/TEJAL%20VENGURLEKAR.jpg?updatedAt=1759573910299",
       icon: GraduationCap
     },
     {
-      name: "Mr. Raj Kumar Singh",
-      role: "staff.mathHead",
-      qualification: "M.Sc. Mathematics",
-      experience: "18+ years",
-      specialization: "Advanced Mathematics",
-      image: "https://ik.imagekit.io/u1orvlllk/GAURI%20KUMAMEKAR.jpg?updatedAt=1759169519173",
+      name: "Mr. Nishakant Vitthal Paradkar",
+      role: "Assistant Teacher",
+      qualification: "B.A., B.P.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/NISHIKANT%20PARADKAR.jpg?updatedAt=1759573905957",
       icon: Award
     },
     {
-      name: "Mrs. NISHTHA KARMALKAR",
-      role: "staff.englishTeacher",
-      qualification: "M.A. English Literature",
-      experience: "15+ years",
-      specialization: "Language Arts & Literature",
-      image: "https://ik.imagekit.io/u1orvlllk/NISHTHA%20KARMALKAR.jpg?updatedAt=1759169608681",
+      name: "Mr. Pankaj Prabhakar Rane",
+      role: "Assistant Teacher",
+      qualification: "B.Sc., B.P.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/PANKAJ%20RANE.jpg?updatedAt=1759573901708",
       icon: BookOpen
     },
     {
-      name: "Dr. Suresh Joshi",
-      role: "staff.scienceHead",
-      qualification: "Ph.D. in Physics",
-      experience: "20+ years",
-      specialization: "Physics & Environmental Science",
-      image: "https://ik.imagekit.io/u1orvlllk/MRUNAL%20HADKAR.jpg?updatedAt=1759169661574",
+      name: "DMrs. Harsha Sachin Sawant",
+      role: "Assistant Teacher",
+      qualification: "B.Sc., B.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/HARSHA%20SAWANT.jpg?updatedAt=1759573911496",
       icon: Award
     },
     {
       name: "Ms. Kavya Reddy",
       role: "staff.computerTeacher",
       qualification: "M.Tech. Computer Science",
-      experience: "12+ years",
-      specialization: "Programming & Digital Literacy",
       image: "https://ik.imagekit.io/u1orvlllk/RAHUL%20MONDKAR.jpg?updatedAt=1759169720287",
       icon: BookOpen
     },
     {
-      name: "Mr. Ashwin Patel",
-      role: "staff.peInstructor",
-      qualification: "B.P.Ed., M.Sc. Sports Science",
-      experience: "10+ years",
-      specialization: "Sports & Fitness",
-      image: "https://ik.imagekit.io/u1orvlllk/SAUJANYA%20PATANKAR.jpg?updatedAt=1759169772262",
+      name: "Mrs. Snehal Devdatta Todankar",
+      role: "Assistant Teacher",
+      qualification: "D.T.Ed.,M.A., B.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/SNEHAL%20TODANKAR.jpg?updatedAt=1759573910260",
       icon: Award
     },
-    
+     {
+      name: "Miss. Anita Isidore Fernandes",
+      role: "Assistant Teacher",
+      qualification: "M.A., M.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/ANITA%20FERNANDES.jpg?updatedAt=1759573907401",
+      icon: Award
+    },
+    {
+      name: "Mrs. Swati Avinash Patkar",
+      role: "Assistant Teacher",
+      qualification: "B.Sc.",
+      image: "https://ik.imagekit.io/zvounggl3c/SWATI%20PATKAR.jpg?updatedAt=1759573910167",
+      icon: Award
+    },
+    {
+      name: "Mr. Rahul Mohan Mondkar",
+      role: "Assistant Teacher",
+      qualification: "Diploma in Sculpture & Modelling",
+      image: "https://ik.imagekit.io/zvounggl3c/RAHUL%20MONDKAR.jpg?updatedAt=1759573906571",
+      icon: Award
+    },
+    {
+      name: "Mrs. Pranjal Pravin Ghatwal",
+      role: "Assistant Teacher",
+      qualification: "H.S.C, D.T.Ed",
+      image: "https://ik.imagekit.io/zvounggl3c/PRANJAL%20GHATMAL.jpg?updatedAt=1759573909964",
+      icon: Award
+    },
+    {
+      name: "Mrs. Smita Mahesh Waingankar",
+      role: "Assistant Teacher",
+      qualification: "S.Y.B.A.  Montessori Training, C.T.C. D.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/SMITA%20WAINGANKAR.jpg?updatedAt=1759573909644",
+      icon: Award
+    },
+    {
+      name: "Mrs. Poonam  Pramod Gosavi",
+      role: "Assistant Teacher",
+      qualification: "B.Com., B.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/POONAM%20GOSAVI.jpg?updatedAt=1759573906865",
+      icon: Award
+    },
+    {
+      name: "Mrs. Sheeja S.V.",
+      role: "Assistant Teacher",
+      qualification: "B.Com., B.Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/SHEEJA%20S.V.jpg?updatedAt=1759573911176",
+      icon: Award
+    },
+    {
+      name: "Mrs. Nishtha Mahesh Karmalkar",
+      role: "Assistant Teacher",
+      qualification: "B.Com., Montessori Training, D. T. Ed.",
+      image: "https://ik.imagekit.io/zvounggl3c/NISHTHA%20KARMALKAR.jpg?updatedAt=1759573910980",
+      icon: Award
+    },
+    {
+      name: "Miss. Manasi Vivek Khadapkar",
+      role: "Assistant Teacher",
+      qualification: "B.Com.",
+      image: "https://ik.imagekit.io/zvounggl3c/MANASI%20KHADAPKAR.jpg?updatedAt=1759573909662",
+      icon: Award
+    },
+    {
+      name: "Miss. Gauri Pandurang Kumamekar",
+      role: "Clerk",
+      qualification: "B.Com",
+      image: "https://ik.imagekit.io/zvounggl3c/GAURI%20KUMAMEKAR.jpg?updatedAt=1759573908492",
+      icon: Award
+    },
+    {
+      name: "Mr. Dipak Tukaram Jadhav",
+      role: "Clerk",
+      qualification: "B.Com",
+      image: "https://ik.imagekit.io/zvounggl3c/DIPAK%20JADHAV.jpg?updatedAt=1759573905344",
+      icon: Award
+    },
+    {
+      name: "Mr. Satish Jagannath Parab",
+      role: "Peon",
+      qualification: "S.S.C ",
+      image: "https://ik.imagekit.io/zvounggl3c/SATISH%20PARAB.jpg?updatedAt=1759573901980",
+      icon: Award
+    },
+    {
+      name: "Mrs. Deesha Dipak Dhuri",
+      role: "Peon",
+      qualification: "S.S.C",
+      image: "https://ik.imagekit.io/zvounggl3c/DISHA%20DHURI.jpg?updatedAt=1759573911156",
+      icon: Award
+    },
+    {
+      name: "Mr.Rupesh Madhukar Masurkar",
+      role: "Peon",
+      qualification: "H.S.C, ITI",
+      image: "https://ik.imagekit.io/zvounggl3c/RUPESH%20MASURKAR.jpg?updatedAt=1759573901739",
+      icon: Award
+    },
+    {
+      name: "Mrs. Poonam Sharad Karangutkar",
+      role: "Peon",
+      qualification: "S.S.C",
+      image: "https://ik.imagekit.io/zvounggl3c/POONAM%20KARANGUTKAR.jpg?updatedAt=1759573902243",
+      icon: Award
+    },
   ];
 
   return (
@@ -131,12 +223,6 @@ const Testimonials = () => {
                           {staff.qualification}
                         </p>
                         <div className="pt-2 space-y-1">
-          <p className="text-xs text-primary font-medium">
-            {t('staff.experience')}: {staff.experience}
-          </p>
-                          <p className="text-xs text-muted-foreground">
-                            {staff.specialization}
-                          </p>
                         </div>
                       </div>
                     </CardContent>
