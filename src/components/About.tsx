@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/jai-section.png";
+import aboutImage from "@/assets/jai-section.jpg";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 

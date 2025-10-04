@@ -167,7 +167,8 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
+        {/* Removed overlay gradient */}
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div> */}
       </div>
       
       {/* Top Navigation Bar */}
