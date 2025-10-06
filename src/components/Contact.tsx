@@ -166,12 +166,17 @@ const Contact = () => {
             {/* Map */}
             <Card className="hover:shadow-elegant transition-shadow duration-300">
               <CardContent className="p-0">
-                <div className="w-full h-48 sm:h-64 bg-muted rounded-lg flex items-center justify-center">
-                  <div className="text-center text-muted-foreground p-4">
-                    <MapPin className="w-8 sm:w-12 h-8 sm:h-12 mx-auto mb-2" />
-                    <p className="text-sm sm:text-base font-medium">{t('contact.map.title')}</p>
-                    <p className="text-xs sm:text-sm">{t('contact.map.location')}</p>
-                  </div>
+                <div className="w-full h-48 sm:h-64 bg-muted rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.628891332394!2d73.46711919899079!3d16.065225642890752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc002abba6ac25d%3A0x4e411704c55f978d!2sJai%20Ganesh%20English%20Medium%20School!5e0!3m2!1sen!2sin!4v1759773026578!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, minHeight: "12rem" }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Jai Ganesh School Location"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>

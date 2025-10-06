@@ -3,7 +3,7 @@ import { Search } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 const heroImage = "/lovable-uploads/2d1dcd84-e57a-4a2c-8ab6-e36e77933c23.png";
-import schoolLogoImg from "@/assets/logo-jai.png";
+import schoolLogoImg from "@/assets/jay logo.png";
 const schoolLogo = schoolLogoImg;
 
 const Hero = () => {
