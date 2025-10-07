@@ -27,7 +27,7 @@ const About = () => {
             <div className="pt-4 sm:pt-6">
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-accent">22</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-accent">21</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">{t('hero.stats.experience')}</div>
                 </div>
                 <div className="text-center">

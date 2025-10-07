@@ -241,7 +241,7 @@ const translations = {
     'whychoose.modern.stats': '20+ Modern Labs',
     'whychoose.values.title': 'Strong Values',
     'whychoose.values.description': 'Character building through moral education, ethics, and values that help students become responsible and compassionate citizens.',
-    'whychoose.values.stats': '22 Years Legacy',
+    'whychoose.values.stats': '21 Years Legacy',
   },
   mr: {
     // Hero Section
