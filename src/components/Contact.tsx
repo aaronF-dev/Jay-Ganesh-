@@ -66,7 +66,6 @@ const Contact = () => {
                     <h3 className="font-semibold text-sm sm:text-base text-primary mb-2">{t('contact.email')}</h3>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {t('contact.email.info')}<br />
-                      {t('contact.email.admissions')}
                     </p>
                   </div>
                 </div>
