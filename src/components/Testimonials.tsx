@@ -41,13 +41,6 @@ const Testimonials = () => {
       icon: Award
     },
     {
-      name: "Ms. Kavya Reddy",
-      role: "staff.computerTeacher",
-      qualification: "M.Tech. Computer Science",
-      image: "https://ik.imagekit.io/u1orvlllk/RAHUL%20MONDKAR.jpg?updatedAt=1759169720287",
-      icon: BookOpen
-    },
-    {
       name: "Mrs. Snehal Devdatta Todankar",
       role: "Assistant Teacher",
       qualification: "D.T.Ed.,M.A., B.Ed.",
