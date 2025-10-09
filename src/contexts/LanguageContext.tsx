@@ -52,7 +52,7 @@ const translations = {
     'programs.secondary.title': 'Secondary Education', 
     'programs.secondary.desc': 'Comprehensive middle school program preparing students for higher secondary education with emphasis on critical thinking.',
     'programs.secondary.grades': 'Grades 6-10',
-    'programs.secondary.features': 'CBSE Curriculum, Laboratory Work, Sports Programs, Career Guidance',
+    'programs.secondary.features': 'SSC Curriculum, Laboratory Work, Sports Programs, Career Guidance',
     'programs.higher.title': 'Higher Secondary',
     'programs.higher.desc': 'Specialized streams in Science, Commerce, and Arts preparing students for competitive exams and university education.',
     'programs.higher.grades': 'Grades 11-12',
