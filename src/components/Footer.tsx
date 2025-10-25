@@ -123,19 +123,27 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/20">
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0 gap-4">
             <p className="text-primary-foreground/80 text-xs sm:text-sm text-center sm:text-left">
-              {t('footer.copyright')}
+              © 2025 Jai Ganesh English Medium School. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors duration-300">
-                {t('footer.links.privacy')}
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-xs sm:text-sm">
+              <a 
+                href="https://topiwala-mes.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-center"
+              >
+                Brought to you by Malvan Education Society Malvan
               </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors duration-300">
-                {t('footer.links.terms')}
-              </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors duration-300">
-                {t('footer.links.accessibility')}
+              <span className="hidden sm:inline text-primary-foreground/40">•</span>
+              <a 
+                href="https://team-knowvation.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 font-medium"
+              >
+                Developed By Knowvation
               </a>
             </div>
           </div>
