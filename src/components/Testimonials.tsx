@@ -1,14 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { GraduationCap, Award, BookOpen, Users, Brain, Heart, Music } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import Autoplay from "embla-carousel-autoplay";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Testimonials = () => {
   const { t } = useLanguage();
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
-  const { elementRef: carouselRef, isVisible: carouselVisible } = useScrollAnimation({ delay: 300 });
+  const { elementRef: gridRef, isVisible: gridVisible } = useScrollAnimation({ delay: 300 });
   const { elementRef: decorationRef, isVisible: decorationVisible } = useScrollAnimation({ delay: 600 });
 
   const staffMembers = [
@@ -167,64 +165,44 @@ const Testimonials = () => {
           </p>
         </div>
         
-        {/* Staff Carousel */}
-        <div ref={carouselRef} className={`relative transition-all duration-1000 ${carouselVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
-          <Carousel 
-            className="w-full"
-            plugins={[
-              Autoplay({
-                delay: 2000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: false
-              })
-            ]}
-            opts={{
-              align: "start",
-              loop: true,
-              dragFree: true,
-            }}
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {staffMembers.map((staff, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 bg-card border-border/50 group">
-<CardContent className="p-6">
-  {/* Staff Image */}
-  <div className="relative mb-6">
-    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
-      <img 
-        src={staff.image}
-        alt={staff.name}
-        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-      />
-    </div>
-    {/* Icon Badge */}
-    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-accent rounded-full flex items-center justify-center border-2 border-background">
-      <staff.icon className="w-4 h-4 text-accent-foreground" />
-    </div>
-  </div>
-  {/* Staff Info */}
-  <div className="text-center space-y-2">
-    <h3 className="font-semibold text-lg text-primary group-hover:text-accent transition-colors">
-      {staff.name}
-    </h3>
-    <p className="text-accent font-medium text-sm">
-      {t(staff.role)}
-    </p>
-    <p className="text-xs text-muted-foreground">
-      {staff.qualification}
-    </p>
-    <div className="pt-2 space-y-1">
-    </div>
-  </div>
-</CardContent>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex -left-12 border-accent/20 hover:border-accent text-accent hover:text-accent-foreground hover:bg-accent" />
-            <CarouselNext className="hidden sm:flex -right-12 border-accent/20 hover:border-accent text-accent hover:text-accent-foreground hover:bg-accent" />
-          </Carousel>
+        {/* Staff Grid */}
+        <div ref={gridRef} className={`relative transition-all duration-1000 ${gridVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {staffMembers.map((staff, index) => (
+              <Card key={index} className="h-full hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 bg-card border-border/50 group">
+                <CardContent className="p-6">
+                  {/* Staff Image */}
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
+                      <img 
+                        src={staff.image}
+                        alt={staff.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    {/* Icon Badge */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-accent rounded-full flex items-center justify-center border-2 border-background">
+                      <staff.icon className="w-4 h-4 text-accent-foreground" />
+                    </div>
+                  </div>
+                  {/* Staff Info */}
+                  <div className="text-center space-y-2">
+                    <h3 className="font-semibold text-lg text-primary group-hover:text-accent transition-colors">
+                      {staff.name}
+                    </h3>
+                    <p className="text-accent font-medium text-sm">
+                      {t(staff.role)}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {staff.qualification}
+                    </p>
+                    <div className="pt-2 space-y-1">
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
         
         {/* Bottom Decoration */}
