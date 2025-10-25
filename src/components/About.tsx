@@ -43,8 +43,9 @@ const About = () => {
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-elegant">
               <img 
                 src={aboutImage} 
-                alt="Students learning in classroom" 
+                alt="Jai Ganesh School - Best English Medium School in Malvan, Sindhudurg"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+                loading="lazy"
               />
             </div>
             

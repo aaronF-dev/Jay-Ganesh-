@@ -223,8 +223,9 @@ const Hero = () => {
             <div className="w-20 h-24 sm:w-28 sm:h-32 md:w-32 md:h-36 flex items-center justify-center">
               <img 
                 src={schoolLogo} 
-                alt="Jay Ganesh School Logo"
+                alt="Jai Ganesh English Medium School Logo - Best School in Malvan, Sindhudurg"
                 className="w-full h-full object-contain opacity-90 animate-float"
+                loading="eager"
                 onError={(e) => {
                   // Fallback to a styled placeholder if image fails to load
                   const target = e.target as HTMLImageElement;

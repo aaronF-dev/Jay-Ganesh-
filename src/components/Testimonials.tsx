@@ -176,8 +176,9 @@ const Testimonials = () => {
                     <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
                       <img 
                         src={staff.image}
-                        alt={staff.name}
+                        alt={`${staff.name} - ${staff.role} at Jai Ganesh School Malvan`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        loading="lazy"
                       />
                     </div>
                     {/* Icon Badge */}

@@ -4,14 +4,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 const Contact = () => {
   const { t } = useLanguage();
+  const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { containerRef: cardsRef, visibleItems } = useStaggeredAnimation(4, 150);
+  const { elementRef: formRef, isVisible: formVisible } = useScrollAnimation({ delay: 400 });
+
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div ref={headerRef} className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${headerVisible ? 'animate-fade-in-down' : 'opacity-0 translate-y-[-40px]'}`}>
           <h2 className="font-georgia text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-primary mb-3 sm:mb-4 leading-tight">
             {t('contact.title')}
           </h2>
@@ -22,8 +27,8 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12">
           {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-4 sm:space-y-6">
-            <Card className="hover:shadow-card transition-shadow duration-300">
+          <div ref={cardsRef} className="lg:col-span-1 space-y-4 sm:space-y-6">
+            <Card className={`hover:shadow-card transition-all duration-500 ${visibleItems[0] ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
               <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -39,7 +44,7 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-card transition-shadow duration-300">
+            <Card className={`hover:shadow-card transition-all duration-500 ${visibleItems[1] ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
               <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -56,7 +61,7 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-card transition-shadow duration-300">
+            <Card className={`hover:shadow-card transition-all duration-500 ${visibleItems[2] ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
               <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -72,7 +77,7 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-card transition-shadow duration-300">
+            <Card className={`hover:shadow-card transition-all duration-500 ${visibleItems[3] ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
               <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -94,7 +99,7 @@ const Contact = () => {
           {/* Contact Form & Map */}
           <div className="lg:col-span-2 space-y-8">
             {/* Contact Form */}
-            <Card className="hover:shadow-elegant transition-shadow duration-300">
+            <Card ref={formRef} className={`hover:shadow-elegant transition-all duration-1000 ${formVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-[40px]'}`}>
               <CardHeader>
                 <CardTitle className="font-georgia text-2xl text-primary">
                   {t('contact.form.title')}
