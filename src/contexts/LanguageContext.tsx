@@ -95,7 +95,7 @@ const translations = {
     'admissions.cta': 'Call Now',
     'admissions.contact.title': 'For admissions inquiries:',
     'admissions.contact.phone': '📞 02365 251211',
-    'admissions.contact.email': '✉️ admissions@jaiganeshshool.edu',
+    'admissions.contact.email': '✉️ jayganesh684@gmail.com',
 
     // Contact
     'contact.title': 'Get in Touch',
@@ -327,7 +327,7 @@ const translations = {
     'admissions.cta': 'आता कॉल करा',
     'admissions.contact.title': 'प्रवेश चौकशीसाठी:',
     'admissions.contact.phone': '📞 ०२३६५ २५१२११',
-    'admissions.contact.email': '✉️ admissions@jaiganeshshool.edu',
+    'admissions.contact.email': '✉️ jayganesh684@gmail.com',
 
     // Contact
     'contact.title': 'संपर्कात रहा',
